@@ -5,4 +5,13 @@
 //  Created by alumno on 4/7/25.
 //
 
-import Foundation
+
+struct Perfil: Codable, Identifiable{
+    let id: Int
+    
+    let name: String
+    let username: String
+    
+    let email: String
+    let phone: String
+}

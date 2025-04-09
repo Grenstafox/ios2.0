@@ -11,14 +11,24 @@ struct PantallaPersonajes: View {
     @Environment(ControladorAplicacion.self) var controlador
     
     var body: some View {
-        
-        if(controlador.pagina_resultados !=nil){
+        if(controlador.pagina_resultados != nil){
             ScrollView{
                 LazyVStack{
                     ForEach(controlador.pagina_resultados!.items){
                         personaje in
-                        Text("El personjae es \(personaje.name)")
-                        AsyncImage(url: URL(String: personaje.image))
+                        NavigationLink {
+                            Text("Hola mundo
+                                 \(controlador.personaje?
+                                    .originPlanet?.name)")
+                        } label: {
+                                Text("El personaje es \(personaje.name)")
+                                AsyncImage(url: URL(string:
+                                    personaje.image))
+                            }.simultaneousGesture(TapGesture().onEnded({
+                                controlador
+                                    .descargar_informacion_personaje(id:
+                                                                        personaje.id)
+                            }))
                     }
                 }
             }

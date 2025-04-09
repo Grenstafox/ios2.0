@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB51A6F82DA6D90F003B0FC7 /* controlador_app.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB51A6F72DA6D90F003B0FC7 /* controlador_app.swift */; };
+		FB51A6FA2DA6D927003B0FC7 /* controlador_publicacion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB51A6F92DA6D927003B0FC7 /* controlador_publicacion.swift */; };
 		FBEAF1102DA424DE004D66E2 /* RedesSocialesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEAF10F2DA424DE004D66E2 /* RedesSocialesApp.swift */; };
 		FBEAF1122DA424DE004D66E2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEAF1112DA424DE004D66E2 /* ContentView.swift */; };
 		FBEAF1142DA424DF004D66E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBEAF1132DA424DF004D66E2 /* Assets.xcassets */; };
@@ -29,6 +31,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FB51A6F72DA6D90F003B0FC7 /* controlador_app.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = controlador_app.swift; sourceTree = "<group>"; };
+		FB51A6F92DA6D927003B0FC7 /* controlador_publicacion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = controlador_publicacion.swift; sourceTree = "<group>"; };
 		FBEAF10C2DA424DE004D66E2 /* bocetos_IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bocetos_IOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBEAF10F2DA424DE004D66E2 /* RedesSocialesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedesSocialesApp.swift; sourceTree = "<group>"; };
 		FBEAF1112DA424DE004D66E2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -159,6 +163,8 @@
 		FBEAF12F2DA4369A004D66E2 /* controladores */ = {
 			isa = PBXGroup;
 			children = (
+				FB51A6F72DA6D90F003B0FC7 /* controlador_app.swift */,
+				FB51A6F92DA6D927003B0FC7 /* controlador_publicacion.swift */,
 			);
 			path = controladores;
 			sourceTree = "<group>";
@@ -266,6 +272,7 @@
 				FBEAF1122DA424DE004D66E2 /* ContentView.swift in Sources */,
 				FBEAF1362DA43707004D66E2 /* placeholder.swift in Sources */,
 				FBEAF12A2DA435CB004D66E2 /* publicacion.swift in Sources */,
+				FB51A6FA2DA6D927003B0FC7 /* controlador_publicacion.swift in Sources */,
 				FBEAF13D2DA437E6004D66E2 /* perfil.swift in Sources */,
 				FBEAF14A2DA43882004D66E2 /* PantallaPersonajes.swift in Sources */,
 				FBEAF1432DA43814004D66E2 /* transformacion.swift in Sources */,
@@ -277,6 +284,7 @@
 				FBEAF1102DA424DE004D66E2 /* RedesSocialesApp.swift in Sources */,
 				FBEAF1412DA43807004D66E2 /* planeta.swift in Sources */,
 				FBEAF1342DA436F8004D66E2 /* dragonball_api.swift in Sources */,
+				FB51A6F82DA6D90F003B0FC7 /* controlador_app.swift in Sources */,
 				FBEAF14C2DA438A7004D66E2 /* publicaciones_generales.swift in Sources */,
 				FBEAF1322DA436E2004D66E2 /* erroes.swift in Sources */,
 			);
