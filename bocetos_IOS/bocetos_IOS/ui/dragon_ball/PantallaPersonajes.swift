@@ -9,26 +9,24 @@ import SwiftUI
 
 struct PantallaPersonajes: View {
     @Environment(ControladorAplicacion.self) var controlador
-    
     var body: some View {
-        if(controlador.pagina_resultados != nil){
-            ScrollView{
-                LazyVStack{
-                    ForEach(controlador.pagina_resultados!.items){
-                        personaje in
-                        NavigationLink {
-                            Text("Hola mundo
-                                 \(controlador.personaje?
-                                    .originPlanet?.name)")
-                        } label: {
+        NavigationStack{
+            if(controlador.pagina_resultados != nil){
+                ScrollView{
+                    LazyVStack{
+                        ForEach(controlador.pagina_resultados!.items){
+                            personaje in
+                            NavigationLink {
+                                Text("Hola mundo \(personaje.name)")
+                            } label: {
                                 Text("El personaje es \(personaje.name)")
-                                AsyncImage(url: URL(string:
-                                    personaje.image))
+                                AsyncImage(url: URL(string:personaje.image))
+                                    .frame(width: 50, height: 50)
                             }.simultaneousGesture(TapGesture().onEnded({
                                 controlador
-                                    .descargar_informacion_personaje(id:
-                                                                        personaje.id)
+                                    .descargar_informacion_personaje(id: personaje.id)
                             }))
+                        }
                     }
                 }
             }
@@ -37,5 +35,5 @@ struct PantallaPersonajes: View {
 }
 #Preview {
     PantallaPersonajes()
-        .environment(ControladorAplicacion)
+        .environment(ControladorAplicacion())
 }

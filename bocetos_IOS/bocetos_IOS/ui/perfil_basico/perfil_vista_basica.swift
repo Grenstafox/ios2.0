@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct PerfilBasicoVsita: View {
+struct PerfilBasicoVista: View {
     @Environment(ControladorAplicacion.self) var controlador
     
     var body: some View{

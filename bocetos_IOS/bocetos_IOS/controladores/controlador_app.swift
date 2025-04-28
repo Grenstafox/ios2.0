@@ -14,9 +14,8 @@ public class ControladorAplicacion{
     var comentarios: Array<Comentario> = []
     
     var publicacion_seleccionada: Publicacion? = nil
-    var perfil_a_mostar: Perfil? = nil
-    
-    // Seccion Dragon Balll
+    var perfil_a_mostrar: Perfil? = nil
+    // Seccion Dragon Ball
     var pagina_resultados: PaginaResultado? = nil
     var personaje: MonoChino? = nil
     
@@ -77,7 +76,7 @@ public class ControladorAplicacion{
     
     func descargar_perfil(id: Int) async -> Void {
         guard let perfil: Perfil = try? await PlaceHolderAPI().descargar_perfil(id: id) else { return }
-        perfil_a_mostar = perfil
+        perfil_a_mostrar = perfil
     }
     
     func ver_perfil(id: Int) -> Void{

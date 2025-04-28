@@ -8,7 +8,7 @@
 enum ErroresDeRed: Error{
     case badUrl
     case invalidRequest
-    case baResponse
+    case badResponse
     case badStatus
     case fallaAlConvertirLaRespuesta
 }

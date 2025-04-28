@@ -17,7 +17,7 @@ struct MenuNavegacion: View {
                 .tabItem{Label("En esta pantalla \n otra parte", systemImage: "circle")}
                 .badge(controlador.publicaciones.count)
             
-            PantallaPersonaje()
+            PantallaPersonajes()
                 .tabItem{
                     Label{
                         VStack{
@@ -26,7 +26,7 @@ struct MenuNavegacion: View {
                     } icon: {
                         Circle()
                         //.fill(person.profileColor)
-                            .frame(width: <#T##Int#>, height: <#T##Int#>, alignment: .center)
+                            .frame(width: 100, height: 100, alignment: .center)
                             .overlay(Text("JJ Abraham"))
                     }
                 }

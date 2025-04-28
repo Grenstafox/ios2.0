@@ -28,4 +28,12 @@ struct PaginaResultado: Codable { //, Identifiable {
     let links: Enlaces
 }
 
+struct PaginaResultadoPlaneta: Codable { //, Identifiable {
+    //var id: Int = self.meta.currentPage
+    let items: [Planeta]
+    let meta: Meta
+    let links: Enlaces
+}
+
+//
 
