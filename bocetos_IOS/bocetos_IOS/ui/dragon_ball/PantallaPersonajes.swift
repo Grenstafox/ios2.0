@@ -20,8 +20,14 @@ struct PantallaPersonajes: View {
                                 Text("Hola mundo \(personaje.name)")
                             } label: {
                                 Text("El personaje es \(personaje.name)")
-                                AsyncImage(url: URL(string:personaje.image))
-                                    .frame(width: 50, height: 50)
+                                AsyncImage(url: URL(string:personaje.image)) { image in
+                                        image.resizable()
+                                        .aspectRatio(contentMode: .fit)
+                                } placeholder: {
+                                    ProgressView()
+                                }
+                                .frame(width: 100, height: 100)
+                                
                             }.simultaneousGesture(TapGesture().onEnded({
                                 controlador
                                     .descargar_informacion_personaje(id: personaje.id)
